@@ -1,0 +1,283 @@
+/*---------------- 
+Fonts and Utilities
+----------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*------- 
+Header Styles 
+--------*/
+.banner{
+    width: 100%;
+    height: 677px;
+    background: #2D25A0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+.banner-title {
+    color: white;
+    padding-left: 156px;
+    padding-right: 51px;
+    padding-top: 207px;
+    padding-bottom: 240px;
+}
+.banner-title h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+a{
+    background-color: #E02C6D;
+    text-decoration: none;
+    color: white;
+    padding: 10px 24px;
+}
+a:hover{
+    background-color: rgb(243, 209, 209);
+    color:#E02C6D ;
+    font-weight:700 ;
+}
+.fa-arrow-right{
+    padding-left: 8px;
+}
+.banner-image img{
+    width: 556.01px;
+    height: 438px;
+    padding-right: 140px;
+    padding-left: 51px;
+    padding-top: 153px;
+    padding-bottom: 86px;
+}
+/*-------- 
+main secttion
+-------- */
+.display-style{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: center;
+    margin-left: 80px;  
+}
+.boxes{
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px 0px #00000026;
+    padding: 15px;
+    margin-bottom: 27px;
+
+}
+.boxes img{
+    width: 100%;
+}
+/*---------------
+ Another section 
+ ----------- */
+.highlights{
+    display: flex;
+    margin-top: 165px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.highlights-1{
+    display: flex;
+    margin-top: 65px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 158px;
+}
+h2{
+    font-style: Bold;
+    font-size: 38px;
+}
+.highlights-image img{
+    width: 567px;
+    height: 427px;
+    box-shadow: 0 0 2px 2px grey;
+}
+/*-------------- 
+Clubs Parts Styles
+---------------- */
+.display-adjustment{
+    display: flex;
+    justify-content: center;
+}
+.display-adjustment .cards img{
+    width: 350px;
+    height: 256px;
+
+}
+.cards{
+    width:min-content ;
+    box-shadow: 0px 0px 40px 0px #00000026;
+    margin: 30px;
+    padding: 15px;
+}
+/*----------------
+ Ballor D'or part 
+ --------------- */
+.ballon-dors{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.ballon-dor{
+    display: flex;
+}
+.ballon-dor .thumbnail img{
+    width: 320px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px grey;
+    margin: 0 20px;
+}
+.ballon-dor-info{
+    margin: 10px;
+}
+/*------ ----- 
+Footer section
+-----------  */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-image img{
+    width:483.13px;
+    height: 113px;
+}
+.fa-facebook-square{
+    margin: 0 10px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.fa-instagram{
+    margin: 0 10px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.fa-youtube{
+    margin: 0 10px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.fa-twitter{
+    margin: 0 10px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+/*---------- 
+Media Queries
+----------- */
+@media screen and (max-width: 767px){
+ .banner{
+     width: auto;
+     height: auto;
+     flex-direction: column;
+ }
+ .banner-title{
+     padding: 30px 15px;
+ }
+ .banner-image img{
+    width: 90%;
+    padding: 20px 10px;
+ }
+ .display-style{
+     width: fit-content;
+     height: fit-content;
+     display: flex;
+     flex-direction: column;
+     margin-left: 5px;
+ }
+ .highlights{
+     flex-direction: column;
+     margin-top: 50px;
+ }
+ .highlights-1{
+     flex-direction: column;
+ }
+ .highlights-image{
+     margin: 20px 10px 0 10px;
+     width: inherit;
+ }
+ .display-adjustment{
+     flex-direction: column;
+ }
+ .cards{
+     margin: 10px;
+ }
+ .ballon-dors{
+     display: block;
+ }
+ .ballon-dors{
+    display: block;
+ }
+ footer .footer-image img{
+     width: 90%;
+ }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ .banner{
+    width: auto;
+    height: auto;
+    flex-direction: column;
+ }
+ .banner-title{
+    padding: 40px 20px;
+ }
+ .banner-title h1{
+     font-size: 40px;
+ }
+.banner-image img{
+    padding: 30px 0 30px 15px;
+ }
+ .display-style{
+     width: 80%;
+     grid-template-columns: repeat(2, 1fr);
+     margin-left:40px;
+ }
+ .highlights{
+    flex-direction: column;
+    margin-top: 50px;
+ }
+ .highlights-1{
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+ }
+ .highlights-image{
+    width: 90%;
+    margin-top: 40px;
+ }
+ .display-adjustment{
+    flex-direction: column;
+ }  
+ h2{
+     font-size:x-large ;
+ }
+ .ballon-dors{
+    display: block; 
+ }    
+ .ballon-dors{
+   display: block;
+ }
+ .ballon-dor-info{
+     width: min-content;
+ }
+ .footer-image img{
+     width: 90%;
+ }
+}
